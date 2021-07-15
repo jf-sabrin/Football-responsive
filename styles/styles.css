@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap')
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header, section, footer{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+.eye-sky{
+    background-color: #2D25A0;
+}
+.btn{
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #E02C6D;
+    margin-right: 5px;
+    color: #fff;
+    border: 1px solid #E02C6D;
+    border-radius: 2px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #E02C6D;
+    transition: background 1s, color 1s;
+}
+.common-template{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 70px;
+
+}
+.common-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.common-content h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+}
+.common-content .btn{
+    margin-top: 20px;
+}
+
+.common-img img{
+    transform: scale(1);
+    transition: transform 1s;
+    width: 100%;
+}
+.common-img img:hover{
+    transform: scale(1.05);
+    transition: transform 1s;
+    cursor: pointer;
+}
+/* header section */
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 40px 0;
+}
+nav ul{
+    display: flex;
+}
+nav .btn{
+    justify-self: end;
+}
+nav ul li a{
+    display: block;
+    padding: 10px 15px;
+    /* background-color: #E02C6D; */
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+nav ul li a:hover{
+    display: block;
+    padding: 10px 15px;
+    background-color: #E02C6D;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 2px;
+    transition: background 1s;
+}
+.icon-html{
+    display: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+#hero{
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+#players-profile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 100px 0;
+}
+.player-card{
+    background-color: #fff;
+    box-shadow: 0 0px 15px 0px #ddd;
+    padding: 15px;
+    transform: scale(1);
+    transition: transform 1s;
+}
+.player-card h3{
+    color: #18191F;
+    font-size: 28px;
+    padding: 10px 0;
+}
+.player-card p{
+    color: #6C6C6C;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.player-card img{
+    width: 100%;
+}
+.player-card:hover {
+    transform: scale(1.01);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+/* world cup section */
+#world-cup{
+    padding-bottom: 100px;
+    padding-top: 11px;
+}
+
+#world-cup .common-content p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+#world-cup .common-content h1{
+    font-size: 48px;
+    color: #0A0826;
+    margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+footer p{
+    font-size: 18px;
+    color: #000;
+}
+footer img{
+    width: 40%;
+}
+.social-icon{
+    display: flex;
+    padding: 30px 0;
+}
+.social-icon li a {
+    color: #969BAB;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #E7E7E8;
+    margin: 0 10px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    text-align: center;
+    border-radius: 59px;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon li a:hover {
+    color: #fff;
+    background-color: #E02C6D;
+    transition: background 1s, color 1s;
+}
